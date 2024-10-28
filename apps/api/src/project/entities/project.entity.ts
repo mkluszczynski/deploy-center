@@ -1,4 +1,10 @@
-import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  OneToOne,
+  PrimaryGeneratedColumn,
+  Relation,
+} from 'typeorm';
 import { Credentials } from './credentials.entity';
 
 @Entity()
@@ -13,5 +19,5 @@ export class Project {
   host: string;
 
   @OneToOne(() => Credentials, (credentials) => credentials.project)
-  credentials: Credentials;
+  credentials: Relation<Credential>;
 }
