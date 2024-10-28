@@ -1,0 +1,8 @@
+name: deploy-center-api
+
+services:
+  api:
+    image: mkluszczynski/deploy-center-api:latest
+    env_file: "../.env"
+    network_mode: host
+    restart: always

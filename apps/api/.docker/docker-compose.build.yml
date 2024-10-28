@@ -1,0 +1,7 @@
+services:
+  app:
+    image: mkluszczynski/deploy-center:latest
+    restart: always
+    build:
+      context: ../
+      dockerfile: ./Dockerfile
