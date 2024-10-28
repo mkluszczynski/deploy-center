@@ -1,0 +1,15 @@
+{
+  "name": "deploy-center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apps:api": "pnpm run --dir apps/api",
+    "apps:api:add": "pnpm add --dir apps/api",
+    "apps:web": "pnpm run --dir apps/web",
+    "apps:web:add": "pnpm add --dir apps/web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
